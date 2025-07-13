@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="header-title">D4mat</h1>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="services.html">Services</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Get in Touch</h3>
+            <p>If you have any questions, need assistance, or want to discuss a project, feel free to reach out!</p>
+            <h3>When am I available?</h3>
+            <p>I am available from Monday to Friday, and from 10:30 AM to 12:30 PM UTC.</p>
+        </section>
+<section class="form">
+    <form action="https://formsubmit.co/promisenzu123@gmail.com" method="POST" autocomplete="on">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email" />
+
+        <label for="project-type">Project Type</label>
+        <select id="project-type" name="project-type" required>
+            <option value="">-- Select Project Type --</option>
+            <option value="website">Website</option>
+            <option value="webapp">Web App</option>
+            <option value="uiux">UI/UX Design</option>
+            <option value="bugfix">Bug Fix / Debugging</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="budget">Budget Range</label>
+        <select id="budget" name="budget" required>
+            <option value="">-- Select Budget Range --</option>
+            <option value="50-100">$50–$100</option>
+            <option value="100-500">$100–$500</option>
+            <option value="500-1000">$500–$1000</option>
+            <option value="1000+">$1000+</option>
+        </select>
+
+        <label for="timeline">Project Timeline</label>
+        <select id="timeline" name="timeline" required>
+            <option value="">-- Select Timeline --</option>
+            <option value="1week">Within 1 Week</option>
+            <option value="2weeks">Within 2 Weeks</option>
+            <option value="1month">1 Month</option>
+            <option value="flexible">Flexible</option>
+        </select>
+
+        <label for="message">Project Description</label>
+        <textarea id="message" name="message" required placeholder="Tell me everything I should know... (max 100 words)"></textarea>
+        <small id="wordCount" style="color: #aaa; margin-top: -12px;">0 / 100 words</small>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+    </main>
+
+    <script src="home.js"></script>
+</body>
+</html>
